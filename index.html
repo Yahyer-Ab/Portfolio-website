@@ -223,6 +223,20 @@
             <p class="port-text">
                 Here is some of my work that I've done in various programming languages.
             </p>
+            <!-- Embed another website using an iframe -->
+<div class="iframe-container" style="position: relative; width: 100vw; height: 100vh;">
+    <button class="open-iframe" onclick="toggleIframe()" style="position: absolute; top: 10px; left: 10px; padding: 10px 20px; background-color: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer; z-index: 1000;">Open Iframe</button>
+    <iframe id="myIframe" src="https://yahyer-ab.github.io/Portfolio/" title="Embedded Website" allow="autoplay; encrypted-media" sandbox="allow-same-origin allow-scripts" style="width: 100%; height: 100vh; border: none;"></iframe>
+</div>
+
+<script>
+    // Toggle iframe function
+    function toggleIframe() {
+        const iframe = document.getElementById("myIframe");
+        iframe.style.display = iframe.style.display === "none" ? "block" : "none";
+    }
+</script>
+
             <div class="portfolios">
                 <div class="portfolio-item">
                     <div class="image">
